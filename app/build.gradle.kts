@@ -29,6 +29,7 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+
     buildFeatures {
         viewBinding = true
     }
@@ -40,6 +41,10 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.core.ktx)
     implementation(libs.material)
+
+    implementation ("com.google.android.material:material:1.3.1")
+    implementation ("androidx.viewpager2:viewpager2:1.0.0")
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.androidx.junit)
